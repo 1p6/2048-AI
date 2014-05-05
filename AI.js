@@ -1,5 +1,5 @@
 var dir = 0;
-var highScore = 6908;
+var highScore = 6996;
 
 var b = document.createElement('button');
 b.innerHTML = "Get High Score";
