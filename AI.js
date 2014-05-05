@@ -5,6 +5,7 @@ var b = document.creatElement('button');
 b.innerHTML = "Get High Score";
 b.onClick = "alert(highScore);";
 document.body.appendChild(b);
+b = undifined
 
 function gameOver(){
   return document.getElementsByClassName("game-over").length > 0;
