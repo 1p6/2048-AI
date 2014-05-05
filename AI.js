@@ -19,8 +19,13 @@ function move(){
   dir = (dir + 1) % 4;
 }
 
+function getScore(){
+  return parseInt(document.getElementsByClassName("score-container")[0].innerHTML.split('<')[0]);
+}
+
 (function tick(){
   if(gameOver()){
+    Console.log(getScore());
     triggerKey(82);
   }
   else{
