@@ -4,7 +4,7 @@ var highScore = 0;
 var b = document.createElement('button');
 b.innerHTML = "Get High Score";
 b.setAttribute('onclick', 'alert(highScore);');
-document.body.insertBefore(b, document.body.fistChild);
+document.body.insertBefore(b, document.body.childNodes[0]);
 
 function gameOver(){
   return document.getElementsByClassName("game-over").length > 0;
