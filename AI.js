@@ -1,4 +1,5 @@
 var dir = 0;
+var highScore = 0;
 
 function gameOver(){
   return document.getElementsByClassName("game-over").length > 0;
@@ -25,7 +26,8 @@ function getScore(){
 
 (function tick(){
   if(gameOver()){
-    console.log(getScore());
+    var score = getScore();
+    highScore = score > highScore ? score : highScore;
     triggerKey(82);
   }
   else{
