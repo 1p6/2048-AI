@@ -1,6 +1,11 @@
 var dir = 0;
 var highScore = 0;
 
+var b = document.creatElement('button');
+b.innerHTML = "Get High Score";
+b.onClick = "alert(highScore);";
+document.body.appendChild(b);
+
 function gameOver(){
   return document.getElementsByClassName("game-over").length > 0;
 }
