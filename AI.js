@@ -25,7 +25,7 @@ function getScore(){
 
 (function tick(){
   if(gameOver()){
-    Console.log(getScore());
+    console.log(getScore());
     triggerKey(82);
   }
   else{
