@@ -32,7 +32,10 @@ function getScore(){
 (function tick(){
   if(gameOver()){
     var score = getScore();
-    highScore = score > highScore ? score : highScore;
+    if(score > highScore) {
+      highScore = score;
+      alert("New highscore! " + highScore);
+    }
     triggerKey(82);
   }
   else{
