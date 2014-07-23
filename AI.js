@@ -1,5 +1,6 @@
 var dir = 0;
 var highScore = 6996;
+var tickSpeed = 50;
 
 var b = document.createElement('button');
 b.innerHTML = "Get High Score";
@@ -42,5 +43,5 @@ function getScore(){
     move();
   }
   
-  setTimeout(tick, 50);
+  setTimeout(tick, tickSpeed);
 })();
