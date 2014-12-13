@@ -1,5 +1,5 @@
 var dir = 0;
-var highScore = 6996;
+var highScore = 0;
 var tickSpeed = 50;
 
 var b = document.createElement('button');
