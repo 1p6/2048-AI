@@ -1,6 +1,6 @@
 var dir = 0;
 var highScore = 0;
-var tickSpeed = 50;
+var tickSpeed = 1;
 
 var b = document.createElement('button');
 b.innerHTML = "Get High Score";
